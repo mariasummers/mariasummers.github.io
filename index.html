@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maria Summers</title>
+    <link rel="stylesheet" href="./styles/fonts.css" charset="utf-8">
+    <style>
+        body {
+            font-family: 'ralewayregular', Arial, sans-serif;
+            margin: 0;
+            height: 100%;
+            background-color: #000000;
+        }
+        .container {
+            height: 100%;
+        }
+        .row {
+            display: flex;
+            align-items: flex-start;
+            height: 33%;
+        }
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background-size: cover;
+            color: #FFFFFF;
+            font-size: 24px;
+            text-shadow: 1px 1px #555555;
+            /*border: 2px solid #EEEEEE;*/
+            
+        }
+        .thirds .section {
+            width: 33.333%;
+            height: 200px;
+        }
+        .halves .section {
+            width: 50%;
+        }
+        
+        /* bg images */
+        .about-section {
+            background-image: 
+            linear-gradient(
+                rgba(0,0,0,.1),
+                rgba(0,0,0,.3)
+                ),
+                url('./img/home/old-books.jpg'); /* https://pixabay.com/en/old-books-book-old-library-436498/ */
+                /* url('./img/home/book-row.jpg'); https://stocksnap.io/photo/EB9B6BC1F6 */
+                /* url('./img/home/library.jpg'); https://stocksnap.io/photo/EB9B6BC1F6 */
+        }
+        .cv-section {
+            background-image: 
+            linear-gradient(
+                rgba(0,0,0,.1),
+                rgba(0,0,0,.3)
+                ),
+                url('./img/home/typewriter.jpg'); /* https://pixabay.com/en/typewriter-keys-mechanically-726965/ */
+        }
+        .teaching-phil-section {
+            background-image: 
+                linear-gradient(
+                    rgba(0,0,0,.1),
+                    rgba(0,0,0,.3)
+                ),
+                url('./img/home/book-shelf.jpg'); /* http://jaymantri.com/post/93427518193/download */
+        }
+        .syllabus-section {
+            background-image: 
+                linear-gradient(
+                    rgba(0,0,0,.1),
+                    rgba(0,0,0,.3)
+                ),
+                url('./img/home/book-stack.jpg'); /* http://www.designerspics.com/photographs/books-reading-glass/ */
+        }
+        .lesson-plans-section {
+            background-image: 
+                linear-gradient(
+                    rgba(0,0,0,.1),
+                    rgba(0,0,0,.3)
+                ),
+                url('./img/home/colored-pencils.jpg'); /* http://libreshot.com/coloured-pencil/ */
+        }
+        .video-section {
+            background-image: 
+            linear-gradient(
+                rgba(0,0,0,.1),
+                rgba(0,0,0,.3)
+                ),
+                url('./img/home/video-camera.jpg'); /* https://pixabay.com/en/camera-video-camera-film-technology-1149041/ */
+        }
+        .recommendations-section {
+            background-image: 
+            linear-gradient(
+                rgba(0,0,0,.1),
+                rgba(0,0,0,.3)
+                ),
+                url('./img/home/books.jpg'); /* https://pixabay.com/en/books-notepad-pen-education-690219/ */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row halves">
+            <div class="section about-section">About</div>
+            <div class="section cv-section">Curriculum Vitae</div>
+        </div>
+        <div class="row thirds">
+            <div class="section teaching-phil-section">Teaching Philosophy</div>
+            <div class="section syllabus-section">Syllabus</div>
+            <div class="section lesson-plans-section">Lesson Plans</div>
+        </div>
+        <div class="row halves">
+            <div class="section video-section">Video</div>
+            <div class="section recommendations-section">Recommendations</div>
+        </div>
+    </div>
+</body>
+</html>
