@@ -183,6 +183,16 @@ a, a:visited, a:active {
  * Individual pages
  */
  
+.site-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.site-nav a {
+    color: #444444;
+    padding: 5px;
+    text-decoration: underline;
+}
+ 
 .hero-header {
     line-height: 38px;
     font-size: 56px;
@@ -222,6 +232,90 @@ a, a:visited, a:active {
             rgba(0,0,0,.3)
         ),
         url("../img/home/old-books-1534.jpg");
+}
+.cv-header {
+    background-image:
+        -webkit-linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/typewriter-1534.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/typewriter-1534.jpg");
+}
+.teaching-phil-header {
+    background-image:
+        -webkit-linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/notepad-pencil-1534.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/notepad-pencil-1534.jpg");
+}
+.syllabus-header {
+    background-image:
+        -webkit-linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/book-stack-1534.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/book-stack-1534.jpg");
+}
+.lesson-plans-header {
+    background-image:
+        -webkit-linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/colored-pencils-1534.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/colored-pencils-1534.jpg");
+}
+.video-header {
+    background-image:
+        -webkit-linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/video-camera-1534.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/video-camera-1534.jpg");
+}
+.recommendations-header {
+    background-image:
+        -webkit-linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/books.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/books.jpg");
 }
 
 @media (max-width: 767px) {
