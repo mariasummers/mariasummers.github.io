@@ -1,35 +1,67 @@
 html {
-    margin: 0px;
+    margin: 0;
     height: 100%;
     width: 100%;
 }
 body {
-    margin: 0px;
+    margin: 0;
     min-height: 100%;
     width: 100%;
     font-family: 'ralewayregular', Arial, sans-serif;
 }
-.container {
+a, a:visited, a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.page-container {
     height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     height: 33%;
 }
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.page-nav {
     height: 100%;
+}
+.section {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-size: cover;
     color: #FFFFFF;
     font-size: 24px;
     text-shadow: 1px 1px #555555;
     opacity: .9;
+    -webkit-transition: all .40s ease-out;
     transition: all .40s ease-out;
     cursor: pointer;
     min-width: 256px;
@@ -37,14 +69,20 @@ body {
 .section:hover {
     opacity: 1;
 }
-.thirds .section {
+.thirds .page-nav {
     width: 33.333%;
 }
-.halves .section {
+.halves .page-nav {
     width: 50%;
 }
 /* bg images */
 .about-section {
+    background-image: 
+    -webkit-linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.5)
+        ),
+        url('../img/home/old-books-1534.jpg');
     background-image: 
     linear-gradient(
         rgba(0,0,0,.3),
@@ -56,6 +94,12 @@ body {
 }
 .cv-section {
     background-image: 
+    -webkit-linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.5)
+        ),
+        url('../img/home/typewriter-1534.jpg');
+    background-image: 
     linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
@@ -63,6 +107,12 @@ body {
         url('../img/home/typewriter-1534.jpg'); /* https://pixabay.com/en/typewriter-keys-mechanically-726965/ */
 }
 .teaching-phil-section {
+    background-image: 
+        -webkit-linear-gradient(
+            rgba(0,0,0,.3),
+            rgba(0,0,0,.5)
+        ),
+        url('../img/home/notepad-pencil-1534.jpg');
     background-image: 
         linear-gradient(
             rgba(0,0,0,.3),
@@ -73,6 +123,12 @@ body {
 }
 .syllabus-section {
     background-image: 
+        -webkit-linear-gradient(
+            rgba(0,0,0,.3),
+            rgba(0,0,0,.5)
+        ),
+        url('../img/home/book-stack-1534.jpg');
+    background-image: 
         linear-gradient(
             rgba(0,0,0,.3),
             rgba(0,0,0,.5)
@@ -80,6 +136,12 @@ body {
         url('../img/home/book-stack-1534.jpg'); /* http://www.designerspics.com/photographs/books-reading-glass/ */
 }
 .lesson-plans-section {
+    background-image: 
+        -webkit-linear-gradient(
+            rgba(0,0,0,.3),
+            rgba(0,0,0,.5)
+        ),
+        url('../img/home/colored-pencils-1534.jpg');
     background-image: 
         linear-gradient(
             rgba(0,0,0,.3),
@@ -89,6 +151,12 @@ body {
 }
 .video-section {
     background-image: 
+    -webkit-linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.5)
+        ),
+        url('../img/home/video-camera-1534.jpg');
+    background-image: 
     linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
@@ -97,6 +165,12 @@ body {
 }
 .recommendations-section {
     background-image: 
+    -webkit-linear-gradient(
+        rgba(0,0,0,.3),
+        rgba(0,0,0,.5)
+        ),
+        url('../img/home/books.jpg');
+    background-image: 
     linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
@@ -104,18 +178,70 @@ body {
         url('../img/home/books.jpg'); /* https://pixabay.com/en/books-notepad-pen-education-690219/ */
         /* the original image is only 1280 wide */
 }
+
+/*
+ * Individual pages
+ */
+ 
+.hero-header {
+    line-height: 38px;
+    font-size: 56px;
+    color: #FFFFFF;
+    min-height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.content-container {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444444;
+    padding: 0 10px;
+}
+.content-container h1,
+.content-container h2,
+.content-container h3 {
+    line-height: 1.2;
+}
+.about-header {
+    background-image:
+        -webkit-linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/old-books-1534.jpg");
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.3)
+        ),
+        url("../img/home/old-books-1534.jpg");
+}
+
 @media (max-width: 767px) {
     .row {
         height: 100%;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
     }
     .section {
         width: 100%;
         min-height: 125px;
     }
-    .halves .section,
-    .thirds .section {
+    .halves .page-nav,
+    .thirds .page-nav {
         width: 100%;
     }
 }
