@@ -50,9 +50,9 @@ body {
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
         ),
-        url('./img/home/old-books-1534.jpg'); /* https://pixabay.com/en/old-books-book-old-library-436498/ */
-        /* url('./img/home/book-row.jpg'); https://stocksnap.io/photo/EB9B6BC1F6 */
-        /* url('./img/home/library.jpg'); https://stocksnap.io/photo/EB9B6BC1F6 */
+        url('../img/home/old-books-1534.jpg'); /* https://pixabay.com/en/old-books-book-old-library-436498/ */
+        /* url('../img/home/book-row.jpg'); https://stocksnap.io/photo/EB9B6BC1F6 */
+        /* url('../img/home/library.jpg'); https://stocksnap.io/photo/EB9B6BC1F6 */
 }
 .cv-section {
     background-image: 
@@ -60,7 +60,7 @@ body {
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
         ),
-        url('./img/home/typewriter-1534.jpg'); /* https://pixabay.com/en/typewriter-keys-mechanically-726965/ */
+        url('../img/home/typewriter-1534.jpg'); /* https://pixabay.com/en/typewriter-keys-mechanically-726965/ */
 }
 .teaching-phil-section {
     background-image: 
@@ -68,8 +68,8 @@ body {
             rgba(0,0,0,.3),
             rgba(0,0,0,.5)
         ),
-        url('./img/home/notepad-pencil-1534.jpg'); /* http://www.designerspics.com/photographs/note-pad-pencil/ */
-        /* url('./img/home/book-shelf.jpg'); http://jaymantri.com/post/93427518193/download */
+        url('../img/home/notepad-pencil-1534.jpg'); /* http://www.designerspics.com/photographs/note-pad-pencil/ */
+        /* url('../img/home/book-shelf.jpg'); http://jaymantri.com/post/93427518193/download */
 }
 .syllabus-section {
     background-image: 
@@ -77,7 +77,7 @@ body {
             rgba(0,0,0,.3),
             rgba(0,0,0,.5)
         ),
-        url('./img/home/book-stack-1534.jpg'); /* http://www.designerspics.com/photographs/books-reading-glass/ */
+        url('../img/home/book-stack-1534.jpg'); /* http://www.designerspics.com/photographs/books-reading-glass/ */
 }
 .lesson-plans-section {
     background-image: 
@@ -85,7 +85,7 @@ body {
             rgba(0,0,0,.3),
             rgba(0,0,0,.5)
         ),
-        url('./img/home/colored-pencils-1534.jpg'); /* http://libreshot.com/coloured-pencil/ */
+        url('../img/home/colored-pencils-1534.jpg'); /* http://libreshot.com/coloured-pencil/ */
 }
 .video-section {
     background-image: 
@@ -93,7 +93,7 @@ body {
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
         ),
-        url('./img/home/video-camera-1534.jpg'); /* https://pixabay.com/en/camera-video-camera-film-technology-1149041/ */
+        url('../img/home/video-camera-1534.jpg'); /* https://pixabay.com/en/camera-video-camera-film-technology-1149041/ */
 }
 .recommendations-section {
     background-image: 
@@ -101,7 +101,7 @@ body {
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
         ),
-        url('./img/home/books.jpg'); /* https://pixabay.com/en/books-notepad-pen-education-690219/ */
+        url('../img/home/books.jpg'); /* https://pixabay.com/en/books-notepad-pen-education-690219/ */
         /* the original image is only 1280 wide */
 }
 @media (max-width: 767px) {
