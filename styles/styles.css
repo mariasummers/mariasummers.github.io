@@ -335,6 +335,10 @@ a, a:visited, a:active {
         ),
         url("../img/home/books.jpg");
 }
+.nav-links.active-link {
+    cursor: auto;
+    text-decoration: none;
+}
 
 @media (max-width: 767px) {
     /* the row with three boxes needs to handle this earlier than the rows 
