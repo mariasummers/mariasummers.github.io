@@ -336,7 +336,7 @@ a, a:visited, a:active {
         url("../img/home/books.jpg");
 }
 .nav-links.active-link {
-    cursor: auto;
+    cursor: default;
     text-decoration: none;
 }
 
