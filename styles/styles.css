@@ -348,6 +348,13 @@ a, a:visited, a:active {
         /* limit the height of the boxes */
         height: 125px;
     }
+    /* make menus on individual pages look a little better on mobile */
+    .content-container {
+        margin-top: 0;
+    }
+    .nav-links {
+        line-height: 40px;
+    }
 }
 @media (max-width: 511px) {
     /* need to fit 2 sections of 125px height */
@@ -363,12 +370,5 @@ a, a:visited, a:active {
     }
     .section {
         opacity: 1;
-    }
-    
-    .content-container {
-        margin-top: 0;
-    }
-    .nav-links {
-        line-height: 40px;
     }
 }
