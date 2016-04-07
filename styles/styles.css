@@ -41,6 +41,7 @@ a, a:visited, a:active {
 }
 .page-nav {
     height: 100%;
+    flex-grow: 1;
 }
 .section {
     height: 100%;
@@ -68,12 +69,6 @@ a, a:visited, a:active {
 }
 .section:hover {
     opacity: 1;
-}
-.thirds .page-nav {
-    width: 33.333%;
-}
-.halves .page-nav {
-    width: 50%;
 }
 /* bg images */
 .about-section {
@@ -319,23 +314,31 @@ a, a:visited, a:active {
 }
 
 @media (max-width: 767px) {
-    .row {
-        height: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-flex-wrap: nowrap;
-            -ms-flex-wrap: nowrap;
-                flex-wrap: nowrap;
+    /* the row with three boxes needs to handle this earlier than the rows 
+        with only two elements */
+    /* the third box in this row will wrap and become as wide as the screen */
+    .row.thirds {
+        /* make the row tall enough to handle two layers */
+        min-height: 250px;
+    }
+    .row.thirds .page-nav {
+        /* limit the height of the boxes */
+        height: 125px;
+    }
+}
+@media (max-width: 511px) {
+    /* need to fit 2 sections of 125px height */
+    .row.halves {
+        min-height: 250px;
+    }
+    /* needs to fit 3 sections of 125px height */
+    .row.thirds {
+        min-height: 375px;
+    }
+    .page-nav {
+        height: 125px;
     }
     .section {
-        width: 100%;
-        min-height: 125px;
-    }
-    .halves .page-nav,
-    .thirds .page-nav {
-        width: 100%;
+        opacity: 1;
     }
 }
