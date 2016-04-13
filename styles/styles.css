@@ -233,7 +233,7 @@ video {
     line-height: 1.6;
     font-size: 18px;
     color: #444444;
-    padding: 0 20px;
+    padding: 0 20px 40px;
 }
 .content-container h1,
 .content-container h2,
@@ -341,6 +341,11 @@ video {
 .nav-links.active-link {
     cursor: default;
     text-decoration: none;
+}
+.headshot {
+    height: 358px;
+    float: left;
+    margin: 8px 20px 20px 0px;
 }
 
 @media (max-width: 767px) {
