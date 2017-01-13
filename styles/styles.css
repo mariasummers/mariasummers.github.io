@@ -65,7 +65,7 @@ video {
             align-items: center;
     background-size: cover;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 32px;
     text-shadow: 1px 1px #555555;
     opacity: .9;
     -webkit-transition: all .40s ease-out;
@@ -90,8 +90,6 @@ video {
         rgba(0,0,0,.5)
         ),
         url('../img/home/old-books-1534.jpg'); /* https://pixabay.com/en/old-books-book-old-library-436498/ */
-        /* url('../img/home/book-row.jpg'); https://stocksnap.io/photo/EB9B6BC1F6 */
-        /* url('../img/home/library.jpg'); https://stocksnap.io/photo/EB9B6BC1F6 */
 }
 .cv-section {
     background-image: 
@@ -120,7 +118,6 @@ video {
             rgba(0,0,0,.5)
         ),
         url('../img/home/notepad-pencil-1534.jpg'); /* http://www.designerspics.com/photographs/note-pad-pencil/ */
-        /* url('../img/home/book-shelf.jpg'); http://jaymantri.com/post/93427518193/download */
 }
 .syllabus-section {
     background-image: 
@@ -187,17 +184,6 @@ video {
 .site-nav {
     display: block;
     text-align: right;
-    /*display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;*/
 }
 .site-nav a {
     color: #444444;
