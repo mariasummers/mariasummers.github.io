@@ -37,6 +37,13 @@
     </div>
     <script src="./js/pdf.min.js"></script>
     <script>
+    // most of this code is from http://mozilla.github.io/pdf.js/examples/
+    /// the "Previous/Next example"
+    
+    // The alignment on the CV is bad if the original has margins. To get rid
+    /// of margins in a new CV, open the Word file in Word. Change the page 
+    /// dimensions to 6.5 x 9. Then set all margins to 0. Then export as PDF.
+
     // If absolute URL from the remote server is provided, configure the CORS
     // header on that server.
     var url = './docs/cv-display.pdf';
