@@ -16,6 +16,31 @@ a, a:visited, a:active {
 video {
     width: 100%;
 }
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    cursor: pointer; 
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+    border: 1px solid #333333;
+    padding: 10px;
+    border-radius: 3px;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+button.disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: default;
+}
 .page-container {
     height: 100vh;
     display: -webkit-box;
@@ -185,10 +210,13 @@ video {
     display: block;
     text-align: right;
 }
-.site-nav a {
+.site-nav a,
+.content-container a {
     color: #444444;
-    padding: 5px;
     text-decoration: underline;
+}
+.site-nav a {
+    padding: 5px;
 }
  
 .hero-header {
@@ -334,6 +362,21 @@ video {
     margin: 8px 20px 20px 0px;
 }
 
+/*
+ * CV Page
+ */
+.pdf-nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 560px;
+}
+.pdf-page-info {
+    line-height: 44px;
+}
+.download-link {
+    margin-bottom: 15px;
+}
 @media (max-width: 767px) {
     /* the row with three boxes needs to handle this earlier than the rows 
         with only two elements */
