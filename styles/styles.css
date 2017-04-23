@@ -376,6 +376,7 @@ button.disabled {
 }
 .download-link {
     margin-bottom: 15px;
+    display: inline-block;
 }
 @media (max-width: 767px) {
     /* the row with three boxes needs to handle this earlier than the rows 
