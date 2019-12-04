@@ -380,7 +380,7 @@ button.disabled {
 }
 .pdf-canvas {
     /* compensates for the whitespace on the left and top of the PDF file that look weird */
-    margin-left: 90px;
+    margin-left: -90px;
     margin-bottom: -23px;
 }
 @media (max-width: 767px) {
