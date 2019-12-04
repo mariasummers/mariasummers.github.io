@@ -20,7 +20,7 @@ button {
     background: none;
     border: 0;
     color: inherit;
-    cursor: pointer; 
+    cursor: pointer;
     font: inherit;
     line-height: normal;
     overflow: visible;
@@ -103,13 +103,13 @@ button.disabled {
 }
 /* bg images */
 .about-section {
-    background-image: 
+    background-image:
     -webkit-linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
         ),
         url('../img/home/old-books-1534.jpg');
-    background-image: 
+    background-image:
     linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
@@ -117,13 +117,13 @@ button.disabled {
         url('../img/home/old-books-1534.jpg'); /* https://pixabay.com/en/old-books-book-old-library-436498/ */
 }
 .cv-section {
-    background-image: 
+    background-image:
     -webkit-linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
         ),
         url('../img/home/typewriter-1534.jpg');
-    background-image: 
+    background-image:
     linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
@@ -131,13 +131,13 @@ button.disabled {
         url('../img/home/typewriter-1534.jpg'); /* https://pixabay.com/en/typewriter-keys-mechanically-726965/ */
 }
 .teaching-phil-section {
-    background-image: 
+    background-image:
         -webkit-linear-gradient(
             rgba(0,0,0,.3),
             rgba(0,0,0,.5)
         ),
         url('../img/home/notepad-pencil-1534.jpg');
-    background-image: 
+    background-image:
         linear-gradient(
             rgba(0,0,0,.3),
             rgba(0,0,0,.5)
@@ -145,13 +145,13 @@ button.disabled {
         url('../img/home/notepad-pencil-1534.jpg'); /* http://www.designerspics.com/photographs/note-pad-pencil/ */
 }
 .syllabus-section {
-    background-image: 
+    background-image:
         -webkit-linear-gradient(
             rgba(0,0,0,.3),
             rgba(0,0,0,.5)
         ),
         url('../img/home/book-stack-1534.jpg');
-    background-image: 
+    background-image:
         linear-gradient(
             rgba(0,0,0,.3),
             rgba(0,0,0,.5)
@@ -159,13 +159,13 @@ button.disabled {
         url('../img/home/book-stack-1534.jpg'); /* http://www.designerspics.com/photographs/books-reading-glass/ */
 }
 .lesson-plans-section {
-    background-image: 
+    background-image:
         -webkit-linear-gradient(
             rgba(0,0,0,.3),
             rgba(0,0,0,.5)
         ),
         url('../img/home/colored-pencils-1534.jpg');
-    background-image: 
+    background-image:
         linear-gradient(
             rgba(0,0,0,.3),
             rgba(0,0,0,.5)
@@ -173,13 +173,13 @@ button.disabled {
         url('../img/home/colored-pencils-1534.jpg'); /* http://libreshot.com/coloured-pencil/ */
 }
 .video-section {
-    background-image: 
+    background-image:
     -webkit-linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
         ),
         url('../img/home/video-camera-1534.jpg');
-    background-image: 
+    background-image:
     linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
@@ -187,13 +187,13 @@ button.disabled {
         url('../img/home/video-camera-1534.jpg'); /* https://pixabay.com/en/camera-video-camera-film-technology-1149041/ */
 }
 .recommendations-section {
-    background-image: 
+    background-image:
     -webkit-linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
         ),
         url('../img/home/books.jpg');
-    background-image: 
+    background-image:
     linear-gradient(
         rgba(0,0,0,.3),
         rgba(0,0,0,.5)
@@ -205,7 +205,7 @@ button.disabled {
 /*
  * Individual pages
  */
- 
+
 .site-nav {
     display: block;
     text-align: right;
@@ -218,7 +218,7 @@ button.disabled {
 .site-nav a {
     padding: 5px;
 }
- 
+
 .hero-header {
     line-height: 38px;
     font-size: 56px;
@@ -378,8 +378,13 @@ button.disabled {
     margin-bottom: 15px;
     display: inline-block;
 }
+.pdf-canvas {
+    /* compensates for the whitespace on the left and top of the PDF file that look weird */
+    margin-left: 90px;
+    margin-bottom: -23px;
+}
 @media (max-width: 767px) {
-    /* the row with three boxes needs to handle this earlier than the rows 
+    /* the row with three boxes needs to handle this earlier than the rows
         with only two elements */
     /* the third box in this row will wrap and become as wide as the screen */
     .row.thirds {
