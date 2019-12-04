@@ -31,7 +31,7 @@
               <span class="pdf-page-info">Page <span id="PageNum">0</span> of <span id="PageCount">0</span></span>
               <button id="Next">Next &rarr;</button>
             </div>
-            <a href="./docs/cv.pdf" class="download-link" download="Maria_Summers_CV.pdf">Download PDF</a>
+            <a href="./docs/cv2019.pdf" class="download-link">Download PDF</a>
             <canvas id="PdfCanvas" class="pdf-canvas"></canvas>
         </div>
     </div>
@@ -39,14 +39,14 @@
     <script>
     // most of this code is from http://mozilla.github.io/pdf.js/examples/
     /// the "Previous/Next example"
-    
+
     // The alignment on the CV is bad if the original has margins. To get rid
-    /// of margins in a new CV, open the Word file in Word. Change the page 
+    /// of margins in a new CV, open the Word file in Word. Change the page
     /// dimensions to 6.5 x 9. Then set all margins to 0. Then export as PDF.
 
     // If absolute URL from the remote server is provided, configure the CORS
     // header on that server.
-    var url = './docs/cv-display.pdf';
+    var url = './docs/cv2019.pdf';
 
     // The workerSrc property shall be specified.
     PDFJS.workerSrc = './js/pdf.worker.min.js';
@@ -108,7 +108,7 @@
             renderPage(num);
         }
     }
-    
+
     function disableBtns() {
         // disable/enable Previous
         if (pageNum == 1) {
